@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mpho Dwayidwayi | Cybersecurity Portfolio</title>
+<meta name="description" content="Mpho Dwayidwayi — Cybersecurity and Network & Infrastructure Security portfolio focused on Azure, Zero Trust, SIEM, threat detection, resilience and Application Security.">
+<style>
+:root{
+  --bg:#07111f; --panel:#0b1728; --panel2:#0e1d31; --text:#e8f1ff;
+  --muted:#8fa5c1; --line:#1d314b; --accent:#38bdf8; --accent2:#22c55e;
+  --danger:#fb7185; --shadow:0 20px 60px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:
+radial-gradient(circle at 85% 10%,rgba(56,189,248,.12),transparent 30%),
+radial-gradient(circle at 10% 35%,rgba(34,197,94,.07),transparent 25%),var(--bg);
+color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;position:relative}
+.logo{font-weight:900;letter-spacing:1px}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:24px;font-size:.92rem;color:var(--muted)}
+.navlinks a:hover{color:var(--accent)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 10px;border-radius:8px}
+.hero{min-height:calc(100vh - 70px);display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center;padding:50px 0}
+.avatar-wrap{display:flex;justify-content:center}
+.avatar{width:min(320px,80%);aspect-ratio:1/1;border-radius:50%;background:var(--panel);border:2px solid var(--line);box-shadow:0 0 0 10px rgba(56,189,248,.06),var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:monospace;font-size:.85rem;text-align:center;padding:20px}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.avatar-caption{text-align:center;margin-top:14px;color:var(--accent);font-family:monospace;font-size:.8rem;letter-spacing:1px;font-weight:700}
+.eyebrow{color:var(--accent);font-family:monospace;font-size:.9rem;letter-spacing:2px}
+h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;margin:14px 0 22px;letter-spacing:-4px}
+h1 span{color:var(--accent)}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:680px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+.btn.primary{background:var(--accent);color:#04101c;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+section{padding:60px 0} .section-title{font-size:2.3rem;margin:0 0 10px}.lead{color:var(--muted);max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.grid.skills-grid{grid-template-columns:repeat(4,1fr)}
+.card{background:rgba(11,23,40,.8);border:1px solid var(--line);padding:20px;border-radius:16px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#315577}
+.card h3{margin:8px 0}.icon{font-size:1.7rem}.tag{display:inline-block;color:#9edfff;border:1px solid #234765;border-radius:999px;padding:4px 9px;font-size:.76rem;margin:4px 3px 0 0}
+.project{min-height:230px;display:flex;flex-direction:column}.project .bottom{margin-top:auto;padding-top:18px;color:var(--accent);font-size:.9rem}
+.timeline{border-left:2px solid var(--line);margin:35px 0 0 10px;padding-left:28px}
+.timeline .item{margin-bottom:35px;position:relative}.timeline .item:before{content:"";position:absolute;left:-37px;top:7px;width:12px;height:12px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px var(--bg)}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:20px}.metric{background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:14px}.metric b{font-size:2rem;color:var(--accent)}
+.contact{background:linear-gradient(145deg,#0d2036,#091523);border:1px solid var(--line);border-radius:22px;padding:45px;text-align:center}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.9rem}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:55px 0}.hero .avatar-wrap{order:-1}.avatar{width:200px}.grid{grid-template-columns:1fr}.grid.skills-grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;top:60px;right:0;flex-direction:column;gap:2px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px;box-shadow:var(--shadow);min-width:180px}.navlinks a{padding:10px 12px;border-radius:8px}.navlinks a:hover{background:rgba(56,189,248,.08)}.menu{display:block}h1{letter-spacing:-2px}.contact{padding:30px}}
+@media(max-width:1000px) and (min-width:801px){.grid.skills-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="logo" href="#home">RAZE<span>_SEC</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </div>
+    <button class="menu" onclick="event.stopPropagation();toggleNav()">☰</button>
+  </div>
+</nav>
+
+<main>
+<section class="hero container" id="home">
+  <div>
+    <div class="eyebrow">CYBERSECURITY • DEFENSE • RESILIENCE • ATTACK</div>
+    <h1>Hi, I'm <span>Mpho Dwayidwayi.</span></h1>
+    <p>A cybersecurity-focused professional passionate about protecting systems, networks, applications and data through practical security principles.</p>
+    <div class="buttons"><a class="btn primary" href="#projects">View projects</a><a class="btn" href="#contact">Let's connect</a></div>
+  </div>
+  <div class="avatar-wrap">
+    <div class="avatar">
+      <!-- Replace this with a real photo: <img src="your-photo.jpg" alt="Mpho Dwayidwayi"> -->
+      <svg viewBox="0 0 320 320" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="bgGlow" cx="50%" cy="35%" r="75%">
+            <stop offset="0%" stop-color="#123a5c"/>
+            <stop offset="100%" stop-color="#0b1728"/>
+          </radialGradient>
+        </defs>
+        <rect width="320" height="320" fill="url(#bgGlow)"/>
+        <circle cx="55" cy="45" r="1.5" fill="#38bdf8" opacity=".5"/>
+        <circle cx="270" cy="70" r="2" fill="#38bdf8" opacity=".4"/>
+        <circle cx="255" cy="270" r="1.5" fill="#22c55e" opacity=".5"/>
+        <circle cx="40" cy="250" r="2" fill="#38bdf8" opacity=".3"/>
+        <path d="M50 320 C50 235 95 195 160 195 C225 195 270 235 270 320 Z" fill="#1d3a5f"/>
+        <path d="M50 320 C50 250 90 205 130 197 L120 230 L140 320 Z" fill="#16324f"/>
+        <path d="M270 320 C270 250 230 205 190 197 L200 230 L180 320 Z" fill="#16324f"/>
+        <ellipse cx="160" cy="112" rx="55" ry="58" fill="#e7b98f"/>
+        <path d="M105 100 C105 55 130 30 160 30 C190 30 215 55 215 100 C215 80 195 90 195 68 C170 85 150 85 125 68 C125 90 105 80 105 100 Z" fill="#3b2a20"/>
+        <ellipse cx="133" cy="118" rx="7" ry="9" fill="#1c130d"/>
+        <ellipse cx="187" cy="118" rx="7" ry="9" fill="#1c130d"/>
+        <path d="M120 108 Q133 100 146 108" fill="none" stroke="#2b1d15" stroke-width="3" stroke-linecap="round"/>
+        <path d="M174 108 Q187 100 200 108" fill="none" stroke="#2b1d15" stroke-width="3" stroke-linecap="round"/>
+        <path d="M140 148 Q160 164 180 148" fill="none" stroke="#8a5a3c" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="160" cy="160" r="66" fill="none" stroke="#38bdf8" stroke-width="3" opacity=".55"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="eyebrow">ABOUT</div><h2 class="section-title">Security from both sides: attack and defense.</h2>
+  <p class="lead">My portfolio covers both offensive and defensive security, finding and exploiting weaknesses before attackers do, and detecting, responding to and recovering from threats when they occur. I approach cybersecurity across networks, endpoints, applications, identities and data, with an emphasis on risk reduction and continuous improvement.</p>
+  <div class="metrics"><div class="metric"><b>2</b><br>Disciplines: Offense + Defense</div><div class="metric"><b>04</b><br>Portfolio projects</div><div class="metric"><b>24/7</b><br>Threat mindset</div><div class="metric"><b>ZT</b><br>Zero Trust approach</div></div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+  <div class="eyebrow">CAPABILITIES</div><h2 class="section-title">Security toolkit: offense & defense.</h2>
+  <div class="grid skills-grid">
+    <div class="card"><h3>Microsoft Sentinel</h3><p class="lead">Cloud-native SIEM for log aggregation, KQL queries, alert triage and SOC incident investigation.</p><span class="tag" style="border-color:#2563eb;color:#93c5fd">Blue Team</span><span class="tag" style="border-color:#facc15;color:#fde68a">Hands-on Practice</span><span class="tag">SIEM</span><span class="tag">KQL</span></div>
+    <div class="card"><h3>Wireshark</h3><p class="lead">Packet capture and protocol analysis for diagnosing network issues and spotting malicious traffic.</p><span class="tag" style="border-color:#2563eb;color:#93c5fd">Blue Team</span><span class="tag" style="border-color:#facc15;color:#fde68a">Hands-on Practice</span><span class="tag">Packet Analysis</span></div>
+    <div class="card"><h3>Nmap</h3><p class="lead">Network discovery and port scanning to map hosts, services and attack surface.</p><span class="tag" style="border-color:#fb7185;color:#fda4af">Red Team</span><span class="tag" style="border-color:#facc15;color:#fde68a">Hands-on Practice</span><span class="tag">Recon</span></div>
+    <div class="card"><h3>Burp Suite</h3><p class="lead">Web application security testing for identifying and validating OWASP Top 10 vulnerabilities.</p><span class="tag" style="border-color:#fb7185;color:#fda4af">Red Team</span><span class="tag" style="border-color:#facc15;color:#fde68a">Hands-on Practice</span><span class="tag">OWASP</span></div>
+  </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+  <div class="eyebrow">PROJECTS</div><h2 class="section-title">Selected cybersecurity projects <span style="color:var(--muted);font-weight:400">(to be added soon)</span></h2>
+  <p class="lead">Portfolio case studies spanning both blue team (detection, investigation, response) and red team (reconnaissance, exploitation, testing) work. Full write-ups and GitHub links coming soon.</p>
+  <div class="grid skills-grid">
+    <div class="card project"><h3>SOC Investigation Lab</h3><p class="lead">Ingested logs into Microsoft Sentinel, built KQL detection queries, triaged alerts and documented a full incident investigation from detection to closure.</p><div><span class="tag">Sentinel</span><span class="tag">KQL</span></div><div class="bottom">IN PROGRESS</div></div>
+    <div class="card project"><h3>Network Traffic Analysis</h3><p class="lead">Captured live and sample traffic in Wireshark to identify suspicious protocols, unusual connections and indicators of compromise.</p><div><span class="tag">Wireshark</span><span class="tag">Packet Analysis</span></div><div class="bottom">IN PROGRESS</div></div>
+    <div class="card project"><h3>Attack Surface Mapping</h3><p class="lead">Used Nmap to enumerate hosts, open ports and running services on a lab network, then prioritized findings by exposure and risk.</p><div><span class="tag">Nmap</span><span class="tag">Recon</span></div><div class="bottom">IN PROGRESS</div></div>
+    <div class="card project"><h3>Web App Security Assessment</h3><p class="lead">Tested a deliberately vulnerable web app with Burp Suite, identifying and validating OWASP Top 10 issues like SQLi and broken auth.</p><div><span class="tag">Burp Suite</span><span class="tag">OWASP</span></div><div class="bottom">IN PROGRESS</div></div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="eyebrow" style="margin-bottom:15px">CONTACT</div>
+  <div class="contact">
+    <h2 class="section-title">Let's secure something.</h2>
+    <p class="lead" style="margin:0 auto 25px">Open to cybersecurity opportunities, projects, collaborations and professional connections.</p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn primary" href="mailto:dwayidwayimpho@gmail.com">Email me</a>
+      <a class="btn" href="tel:+27651137839">065 113 7839</a>
+      <a class="btn" href="https://www.linkedin.com/in/mpho-dwayidwayi-420a34240" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://github.com/RazeMpho" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer><div class="container">© <span id="year"></span> Mpho Dwayidwayi. Built with a security-first mindset.</div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+
+function toggleNav(){
+  const nav = document.querySelector('.navlinks');
+  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
+document.addEventListener('click', function(e){
+  const nav = document.querySelector('.navlinks');
+  if(nav.style.display === 'flex' && !nav.contains(e.target)){
+    nav.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>
