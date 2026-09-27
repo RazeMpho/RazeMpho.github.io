@@ -55,6 +55,3 @@ This site can be hosted for free with **GitHub Pages**:
 
 ## Contact
 
-- Email: dwayidwayimpho@gmail.com
-- LinkedIn: [linkedin.com/in/mpho-dwayidwayi-420a34240](https://www.linkedin.com/in/mpho-dwayidwayi-420a34240)
-- GitHub: [github.com/RazeMpho](https://github.com/RazeMpho)
